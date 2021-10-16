@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
         <!-- CSS/FAVICON -->
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/icon" sizes="32x32" href="./images/logo.ico">
+        <link rel="icon" type="image" sizes="32x32" href="./images/pb-facivon.svg">
         <title>Patryk Besler Portfolio</title>
 
     </head>
@@ -23,15 +23,14 @@
         <header>
             <div class="container">
                 <div class="logo-container">
-                    <img src="images/logo.ico" alt="Logo of portfolio" width="32" height="32">
-                    <span>logo</span>
+                    <a class="logo"></a>
+                    <span></span>
                 </div>
                 <nav>
                     <ul class="nav-list">
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#tech">Technologies</a></li>
                         <li><a href="#about">About</a></li>
-
                     </ul>
                 </nav>
                 <div class="media-links">
@@ -47,17 +46,26 @@
 
             <div class="container" id="hero">
                 <div class="hero-wrapper">
+
                     <div class="hero-text">
                         <h1>Patryk Besler, <br> aspiring Frontend Developer</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima qui magnam quaerat fugit
-                            exercitationem perferendis assumenda vero quo eius. Cupiditate?
+                        <p>I'm a Software Engineering student with flair for design, devoted to building quality
+                            websites and apps.
                         </p>
+                        <a class="cta" href="mailto:beslerpatryk@gmail.com" target="_blank">Contact me</i></a>
+                        <a class="cta" href="CV-en.pdf" download="besler-resume-EN">Download CV
+                            <i class="fas fa-file-download"></i>
+                        </a>
 
                     </div>
                     <div class="hero-animation">
                         <img src="" alt="">
                     </div>
                 </div>
+            </div>
+
+            <div class="div-container">
+                <div class="divider-primary"></div>
             </div>
 
             <div class="container" id="projects">
@@ -68,23 +76,32 @@
                         <div class="project-card">
                             <div class="image-wrapper">
                                 <div style="background-image: url(images/project-1.png);" class="project-image">
-                                    <a class="live-link" href="#">Live</a>
-                                    <a class="code-link" href="#">Code</a>
+                                    <a class="live-link" target="_blank"
+                                        href="https://beslerpatryk.github.io/time-tracking-dashboard/">Live</a>
+                                    <a class="code-link" target="_blank"
+                                        href="https://github.com/beslerpatryk/time-tracking-dashboard">Code</a>
                                 </div>
 
                             </div>
 
                             <div class="project-info">
-                                <ul>
+                                <ul class="stack">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                                <h3 class="project-title">Project Title</h3>
+                                <h3 class="project-title">Time Tracking Dashboard</h3>
 
-                                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Sequi sint, tempore, facere nam hic sit nihil rerum rem ratione distinctio numquam
-                                    magnam voluptatum est reprehenderit iure natus nemo ipsam qui.
+                                <p class="project-description">
+                                    A fully responsive time tracking dashboard.
+                                    Users are able to:
                                 </p>
+                                <ul class="feature-list">
+                                    <li>View the optimal layout for the site depending on their device's screen size
+                                    </li>
+                                    <li>See hover states for all interactive elements on the page</li>
+                                    <li>Switch between viewing Daily, Weekly, and Monthly stats</li>
+                                </ul>
+
                                 <!-- <div class="tech-used">
                                     <i class="fab fa-html5"></i>
                                     <i class="fab fa-css3-alt"></i>
@@ -96,21 +113,24 @@
                         <div class="project-card">
                             <div class="image-wrapper">
                                 <div style="background-image: url(images/project-2.png);" class="project-image">
-                                    <a class="live-link" href="#">Live</a>
-                                    <a class="code-link" href="#">Code</a>
+                                    <a class="live-link" target="blank"
+                                        href="https://just-a-movieapp.netlify.app/">Live</a>
+                                    <a class="code-link" target="blank"
+                                        href="https://github.com/beslerpatryk/50_projects_in_50_days/tree/main/17_movie_app">Code</a>
                                 </div>
 
                             </div>
 
                             <div class="project-info">
-                                <ul>
+                                <ul class="stack">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                                <h3 class="project-title">Project Title</h3>
-                                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Sequi sint, tempore, facere nam hic sit nihil rerum rem ratione distinctio numquam
-                                    magnam voluptatum est reprehenderit iure natus nemo ipsam qui.
+                                <h3 class="project-title">Movie App</h3>
+                                <p class="project-description">A progressive, fully responsive web application to help
+                                    you discover
+                                    trending movies. You can also use search bar to find any title you need. Built using
+                                    TMDB API and Javascript.
                                 </p>
                                 <!-- <div class="tech-used">
                                     <i class="fab fa-html5"></i>
@@ -123,18 +143,20 @@
                         <div class="project-card">
                             <div class="image-wrapper">
                                 <div style="background-image: url(images/project-3.png);" class="project-image">
-                                    <a class="live-link" href="#">Live</a>
-                                    <a class="code-link" href="#">Code</a>
+                                    <a class="live-link" target="_blank"
+                                        href="https://beslerpatryk.github.io/easybank-landing-page/">Live</a>
+                                    <a class="code-link" target="_blank"
+                                        href="https://github.com/beslerpatryk/easybank-landing-page">Code</a>
                                 </div>
 
                             </div>
 
                             <div class="project-info">
-                                <ul>
+                                <ul class="stack">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                                <h3 class="project-title">Project Title</h3>
+                                <h3 class="project-title">Payment App <br> Landing Page</h3>
                                 <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Sequi sint, tempore, facere nam hic sit nihil rerum rem ratione distinctio numquam
                                     magnam voluptatum est reprehenderit iure natus nemo ipsam qui.
@@ -150,18 +172,20 @@
                         <div class="project-card">
                             <div class="image-wrapper">
                                 <div style="background-image: url(images/project-4.png);" class="project-image">
-                                    <a class="live-link" href="#">Live</a>
-                                    <a class="code-link" href="#">Code</a>
+                                    <a class="live-link" target="_blank"
+                                        href="https://beslerpatryk.github.io/huddle-landing-page/">Live</a>
+                                    <a class="code-link" target="_blank"
+                                        href="https://github.com/beslerpatryk/huddle-landing-page#">Code</a>
                                 </div>
 
                             </div>
 
                             <div class="project-info">
-                                <ul>
+                                <ul class="stack">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                                <h3 class="project-title">Project Title</h3>
+                                <h3 class="project-title">Communicator App <br> Landing Page</h3>
                                 <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Sequi sint, tempore, facere nam hic sit nihil rerum rem ratione distinctio numquam
                                     magnam voluptatum est reprehenderit iure natus nemo ipsam qui.
@@ -178,11 +202,16 @@
                 </div>
             </div>
 
+            <div class="div-container">
+                <div class="divider-secondary"></div>
+            </div>
+
             <div class="container" id="tech">
                 <div class="tech-wrapper">
                     <h2>Technologies</h2>
                     <p>
-                        I've worked with a range a technologies in the web development world. From Back-end To Design
+                        I've worked with a range of technologies in the web development world. From back-end to
+                        design...
                     </p>
                     <div class="tech-cards-wrapper">
 
@@ -208,42 +237,51 @@
                 </div>
             </div>
 
+            <div class="div-container">
+                <div class="divider-primary"></div>
+            </div>
+
             <div class="container" id="about">
                 <div class="about-wrapper">
                     <h2>About me</h2>
                     <p>
-                        My name is Patryk Besler, Software Engineering student from Poland, currently residing in China.
+                        Software Engineering student from Poland, currently residing in Chengdu, China.
                         I'm devoted to building quality and beautiful websites & apps.
                     </p>
                     <div class="timeline-wrapper">
 
                         <div class="timeline-card">
                             <h3>2017</h3>
-                            <i class="fas fa-angle-right"></i>
+                            <img src="images/timeline.svg" alt="" srcset="">
+                            <!-- <i class="fas fa-angle-right"></i> -->
                             <p>Moved to China and started Software Engineering studies</p>
                         </div>
 
                         <div class="timeline-card">
                             <h3>2018</h3>
-                            <i class="fas fa-angle-right"></i>
+                            <img src="images/timeline.svg" alt="" srcset="">
+                            <!-- <i class="fas fa-angle-right"></i> -->
                             <p>Worked as a freelance Graphic Designer</p>
                         </div>
 
                         <div class="timeline-card">
                             <h3>2019</h3>
-                            <i class="fas fa-angle-right"></i>
+                            <img src="images/timeline.svg" alt="" srcset="">
+                            <!-- <i class="fas fa-angle-right"></i> -->
                             <p>First webpage project</p>
                         </div>
 
                         <div class="timeline-card">
                             <h3>2020</h3>
-                            <i class="fas fa-angle-right"></i>
-                            <p>Expanding my knowledge in Software Engineering</p>
+                            <img src="images/timeline.svg" alt="" srcset="">
+                            <!-- <i class="fas fa-angle-right"></i> -->
+                            <p>Expanding my knowledge about Software Engineering</p>
                         </div>
 
                         <div class="timeline-card">
                             <h3>2021</h3>
-                            <i class="fas fa-angle-right"></i>
+                            <img src="images/timeline.svg" alt="" srcset="">
+                            <!-- <i class="fas fa-angle-right"></i> -->
                             <p>Focused on Web Developer career</p>
                         </div>
 
@@ -259,13 +297,16 @@
                     <h4>Call</h4>
                     <p>(+86) 1328-112-4047</p>
                     <h4>Email</h4>
-                    <a href="mailto:beslerpatryk@gmail.com">beslerpatryk@gmail.com</a>
+                    <a target="_blank" href="mailto:beslerpatryk@gmail.com">beslerpatryk@gmail.com</a>
                 </div>
                 <div class="bottom">
-                    <p>Innovating one project at a time</p>
+                    <small>©2021 Patryk Besler All Rights Reserved </small>
+                    <!-- Innovating one project at a time -->
                     <div class="media-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/beslerpatryk" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="mailto:beslerpatryk@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
