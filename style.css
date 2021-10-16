@@ -224,7 +224,7 @@ header button {
 
 .hero-animation {
 	position: absolute;
-	top: 0;
+	top: -1rem;
 	right: 0;
 	width: 40rem;
 	background-color: #0f1624;
