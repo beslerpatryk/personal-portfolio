@@ -144,7 +144,7 @@ h2 {
 
 .divider-secondary {
 	width: 4.5rem;
-	height: 0.5rem;
+	height: clamp(0.3rem, 1vw, 0.5rem);
 	background: linear-gradient(90deg, #985dd0 0%, #e5633c 100%);
 	border-radius: 25px;
 	margin: 2rem 0;
@@ -521,7 +521,33 @@ footer {
 }
 
 @media (max-width: 720px) {
-	.nav-list {
+	.divider-primary {
+		margin: 1rem 0;
+	}
+
+	.divider-secondary {
+		margin: 1rem 0;
+	}
+
+	.nav-mobile {
+		position: fixed;
+		bottom: 0;
+		background-color: #0e1a31;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 4rem;
+		width: 100%;
+		z-index: 200;
+	}
+
+	.nav-mobile ul {
+		gap: clamp(1rem, 14vw, 8rem);
+	}
+
+	header .nav-list {
 		display: none;
 	}
 
@@ -550,8 +576,29 @@ footer {
 	.about-wrapper,
 	.tech-wrapper,
 	.footer-wrapper,
-	.div-container {
+	.div-container,
+	.container {
 		padding: 2rem;
+	}
+
+	.tech-wrapper > p {
+		max-width: 100%;
+	}
+
+	.tech-cards-wrapper {
+		gap: 2rem;
+	}
+
+	.about-wrapper > p {
+		max-width: 100%;
+	}
+
+	footer {
+		margin-top: 3rem;
+	}
+
+	.tech-card p {
+		max-width: 100%;
 	}
 
 	.cards-wrapper {
