@@ -35,6 +35,10 @@ main {
 
 /* HEADER */
 
+.nav-mobile {
+	display: none;
+}
+
 header .container {
 	display: flex;
 	justify-content: space-between;
@@ -527,6 +531,10 @@ footer {
 
 	.divider-secondary {
 		margin: 1rem 0;
+	}
+
+	.hero-text {
+		margin-top: 2rem;
 	}
 
 	.nav-mobile {
