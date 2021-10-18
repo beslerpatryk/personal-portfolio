@@ -1,3 +1,7 @@
+:root {
+	--primary-color: hsl(220, 41%, 10%);
+}
+
 /* GENERAL */
 
 * {
@@ -12,7 +16,7 @@ html {
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: #0f1624;
+	background-color: var(--primary-color);
 	color: white;
 }
 
@@ -22,10 +26,6 @@ a {
 
 img {
 	vertical-align: top;
-}
-
-header {
-	background-color: #0f1624;
 }
 
 main {
@@ -207,7 +207,7 @@ header button {
 	margin-right: 1.5rem;
 	padding: 1rem 2rem;
 	border-radius: 50px;
-	background-color: lightblue;
+	background-color: var(--primary-color);
 	background: linear-gradient(90deg, #ae36fe -50%, #04d7d9 150%);
 	border: none;
 	cursor: pointer;
@@ -251,16 +251,10 @@ header button {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 	grid-auto-rows: 1fr;
-	/* grid-template-columns: 1fr 1fr; */
 	gap: 5rem;
 }
 
 .project-card {
-	/* padding: 1rem; */
-	/* background-color: rgb(112, 112, 231); */
-
-	/* background-color: #0f1624; */
-	/* box-shadow: 0 0px 2px rgba(255, 255, 255, 0.5); */
 	border-radius: 5px;
 	max-width: 616px;
 	justify-self: center;
