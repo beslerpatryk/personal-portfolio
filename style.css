@@ -22,6 +22,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 img {
@@ -95,12 +96,12 @@ header button {
 .nav-list a {
 	font-family: inherit;
 	color: rgb(207, 207, 207);
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 .nav-list a:hover {
 	color: white;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 header .media-links {
@@ -111,12 +112,12 @@ header .media-links {
 header i {
 	color: white;
 	font-size: 2rem;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 header i:hover {
 	transform: scale(1.1);
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 /* GENERAL */
@@ -211,7 +212,7 @@ header button {
 	background: linear-gradient(90deg, #ae36fe -50%, #04d7d9 150%);
 	border: none;
 	cursor: pointer;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 	margin-top: 2rem;
 	z-index: 90;
 }
@@ -222,7 +223,7 @@ header button {
 
 .hero-text .cta:hover {
 	filter: saturate(1.7) brightness(1.2);
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 .hero-text button:active {
@@ -277,14 +278,14 @@ header button {
 	font-weight: 400;
 	border-radius: 25px;
 	padding: 0.3rem 0.7rem;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 	font-size: 0.8rem;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .project-image a:hover {
 	background-color: #53549c;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 .live-link {
@@ -319,6 +320,21 @@ header button {
 	margin-right: 2rem;
 }
 
+.project-info a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.project-info a:hover {
+	color: #689aff;
+	transition: 0.3s ease;
+}
+
+.project-info a:visited {
+	text-decoration: none;
+}
+
 .project-title {
 	font-size: clamp(1.5rem, 7vw, 2rem);
 }
@@ -331,6 +347,7 @@ header button {
 
 .feature-list li {
 	margin-left: 2rem;
+	margin-bottom: 0.8rem;
 }
 
 .tech-used {
@@ -412,9 +429,21 @@ header button {
 
 .about-wrapper > p {
 	font-size: clamp(1rem, 3vw, 1.5rem);
-	max-width: 60%;
+	max-width: 68%;
 	color: #878b92;
 	line-height: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.about-wrapper > p a {
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+.about-wrapper > p a:hover {
+	color: white;
+	transition: ease 0.3s;
 }
 
 .timeline-wrapper {
@@ -509,13 +538,13 @@ footer {
 	margin-left: 1rem;
 	color: white;
 	font-size: 2rem;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 	font-size: 1.2rem;
 }
 
 .footer-wrapper i:hover {
 	transform: scale(1.1);
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 @media (max-width: 720px) {
