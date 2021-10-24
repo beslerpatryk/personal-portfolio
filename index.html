@@ -36,25 +36,41 @@
                     <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/beslerpatryk" target="_blank"><i
                             class="fab fa-linkedin"></i></a>
-                    <a href="mailto:beslerpatryk@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="beslerpatryk [at] gmail.com" target="_blank" 
+                        onclick="this.href='mailto:' + 'beslerpatryk' + '@' + 'gmail.com'"><i class="fas fa-envelope"></i></a>
                     <!-- <button id="menu-btn"><i class="fas fa-bars"></i></button> -->
                 </div>
+                
             </div>
+
         </header>
+
+                    <!-- <div class="dark-toggle inverted">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div> -->
 
         <main>
 
             <div class="container" id="hero">
                 <div class="hero-wrapper">
-                    <div class="hero-text">
+                    <div class="hero-text ">
                         <h1>Patryk Besler, <br> aspiring Frontend Developer</h1>
                         <p>
                             I'm a Software Engineering student with flair for design, devoted to building quality
                             websites and apps.
                         </p>
-                        <a class="cta" href="mailto:beslerpatryk@gmail.com" target="_blank">Contact me</a>
+
+                        <div class="inverted">
+                            <a class="cta " href="beslerpatryk [at] gmail.com" target="_blank" 
+                            onclick="this.href='mailto:' + 'beslerpatryk' + '@' + 'gmail.com'">Contact me</a>
+                        </div>
                     </div>
-                    <div class="hero-animation"> </div>
+                    <div class="hero-animation "> </div>
                 </div>
             </div>
 
@@ -67,7 +83,7 @@
                     <h2>Projects</h2>
                     <div class="cards-wrapper">
                         <div class="project-card">
-                            <div class="image-wrapper">
+                            <div class="image-wrapper inverted">
                                 <div style="background-image: url(images/project-1.png);" class="project-image">
                                     <a class="live-link" target="_blank"
                                         href="https://beslerpatryk.github.io/time-tracking-dashboard/">Live</a>
@@ -96,7 +112,7 @@
                         </div>
 
                         <div class="project-card">
-                            <div class="image-wrapper">
+                            <div class="image-wrapper inverted">
                                 <div style="background-image: url(images/project-2.png);" class="project-image">
                                     <a class="live-link" target="blank"
                                         href="https://just-a-movieapp.netlify.app/">Live</a>
@@ -122,7 +138,7 @@
                         </div>
 
                         <div class="project-card">
-                            <div class="image-wrapper">
+                            <div class="image-wrapper inverted">
                                 <div style="background-image: url(images/project-3.png);" class="project-image">
                                     <a class="live-link" target="_blank"
                                         href="https://beslerpatryk.github.io/easybank-landing-page/">Live</a>
@@ -145,10 +161,12 @@
                         </div>
 
                         <div class="project-card">
-                            <div class="image-wrapper">
+                            <div class="image-wrapper inverted">
                                 <div style="background-image: url(images/project-4.png);" class="project-image">                           
                                     <a class="code-link" target="_blank"
-                                        href="https://github.com/beslerpatryk/huddle-landing-page#">Code</a>
+                                        href="https://github.com/beslerpatryk/huddle-landing-page">Code</a>
+                                    <a class="live-link" target="_blank"
+                                        href="https://beslerpatryk.github.io/huddle-landing-page/">Live</a>
                                 </div>
                             </div>
                             <div class="project-info">
@@ -176,7 +194,7 @@
             </div>
 
             <div class="container" id="tech">
-                <div class="tech-wrapper">
+                <div class="tech wrapper">
                     <h2>Technologies</h2>
                     <p>
                         I've worked with a range of technologies in the web development world. From back-end to
@@ -207,11 +225,11 @@
             </div>
 
             <div class="container" id="about">
-                <div class="about-wrapper">
+                <div class="about wrapper">
                     <h2>About me</h2>
                     <p>
                         Software Engineering student from Poland, currently residing in Chengdu, China.
-                        When I’m not coding, you can find me playing PC games 🎮 , learning Chinese and making silly photos of my cat - <a href="https://imgur.com/a/XPa41Pn" target="_blank">Pizza</a> 🍕 
+                        When I’m not coding, you can find me playing PC games, learning Chinese and making silly photos of my cat - <a href="https://imgur.com/a/XPa41Pn" target="_blank">Pizza</a>  
                     </p>
                     <div class="timeline-wrapper">
                         <div class="timeline-card">
@@ -237,11 +255,45 @@
                         <div class="timeline-card">
                             <h3>2021</h3>
                             <img src="images/timeline.svg" alt="" srcset="">
-                            <p>Focused on Web Developer career</p>
+                            <p>Focused on web development career path</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="div-container">
+                <div class="divider-secondary"></div>
+            </div>
+            
+            <div class="container" id="profile-links">
+                <div class="profile-links wrapper">
+                    <h3>Links to my profiles</h3>
+                    <h2>Coding Challenge Websites</h2>
+
+                    <ul>
+                        <li>
+                            <a href="https://codepen.io/your-work/" target="_blank">
+                                <div class="page-icon-container" style="background-image:url(images/profile-icon-codepen.svg); ">
+                                </div>
+                                Codepen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://exercism.org/profiles/beslerpatryk" target="_blank">
+                                <div class="page-icon-container" style="background-image:url(images/profile-icon-exercism.png);"></div>
+                                Exercism
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.frontendmentor.io/profile/beslerpatryk" target="_blank">
+                                <div class="page-icon-container fm" style="background-image:url(images/profile-icon-frontendmentor.png);"></div>
+                                Frontend Mentor
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </main>
 
         <nav class="nav-mobile">
@@ -256,14 +308,16 @@
             <div class="footer-wrapper">
                 <div class="contact-info">
                     <h4>Email</h4>
-                    <a target="_blank" href="mailto:beslerpatryk@gmail.com">beslerpatryk@gmail.com</a>
+                    <a target="_blank" href="beslerpatryk [at] gmail.com" target="_blank" 
+                        onclick="this.href='mailto:' + 'beslerpatryk' + '@' + 'gmail.com'" ><span class="reverse">moc.liamg@kyrtaprelseb</span></a>
                 </div>
                 <div class="bottom">
-                    <small>©2021 Patryk Besler All Rights Reserved </small>
+                    <small>©2021 Patryk Besler </small>
                     <div class="media-links">
                         <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/beslerpatryk" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:beslerpatryk@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="beslerpatryk [at] gmail.com" target="_blank" 
+                        onclick="this.href='mailto:' + 'beslerpatryk' + '@' + 'gmail.com'"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
