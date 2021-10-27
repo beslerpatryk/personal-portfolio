@@ -1,16 +1,25 @@
 :root {
+	/* Dark Mode */
 	--primary: hsl(220, 41%, 10%);
 	--secondary: hsl(220, 41%, 10%);
-	--text: hsl(220, 41%, 10%);
+	--navigation: hsl(0, 0%, 81%);
+	--header: hsl(0, 0%, 98%);
+	--paragraph: hsl(0, 0%, 81%);
 	--accent: hsl(220, 41%, 10%);
+	--mobile-nav: hsl(219, 56%, 12%);
+
+	/*Light Mode */
+	--lm-primary: hsl(0, 0%, 96%);
+	--lm-header: hsl(0, 0%, 83%);
+	--lm-list: hsl(0, 0%, 66%);
 }
 
 /* GENERAL */
 
 * {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -18,15 +27,16 @@ html {
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
-	background-color: var(--primary);
 	color: white;
+	background-color: var(--primary);
+	font-family: "Montserrat", sans-serif;
 	transition: background-color 0.3s ease-in;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 h2 {
@@ -129,11 +139,12 @@ header .container img {
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: 700;
+	margin-top: 0.5rem;
 }
 
 .nav-list a {
 	font-family: inherit;
-	color: rgb(207, 207, 207);
+	color: var(--navigation);
 	transition: 0.3s ease;
 }
 
@@ -221,30 +232,31 @@ header a i:hover {
 	margin-bottom: 0rem;
 }
 
-.hero-text {
-	color: #fafafa;
+.hero-text-container {
+	color: var(--header);
 	margin-top: 4rem;
 }
 
-.hero-text h1 {
+.hero-text-container h1 {
+	color: var(--header);
 	font-size: clamp(2rem, 7vw, 4rem);
 	font-weight: 600;
 	position: relative;
 	z-index: 2;
 }
 
-.hero-text p {
+.hero-text-container p {
 	position: relative;
 	max-width: 68%;
 	margin-top: 2rem;
 	line-height: clamp(1.5rem, 4vw, 3rem);
 	font-size: clamp(1rem, 3vw, 1.8rem);
 	z-index: 12;
-	color: #cfcfcf;
+	color: var(--paragraph);
 	margin-bottom: 1rem;
 }
 
-.hero-text .cta {
+.hero-text-container .cta {
 	display: inline-block;
 	color: white;
 	font-size: clamp(1rem, 4vw, 1.5rem);
@@ -261,16 +273,16 @@ header a i:hover {
 	z-index: 90;
 }
 
-.hero-text .cta i {
+.hero-text-container .cta i {
 	margin-left: 0.5rem;
 }
 
-.hero-text .cta:hover {
+.hero-text-container .cta:hover {
 	filter: saturate(1.7) brightness(1.2);
 	transition: 0.3s ease;
 }
 
-.hero-text button:active {
+.hero-text-container button:active {
 	outline: none;
 }
 
@@ -354,13 +366,13 @@ header a i:hover {
 }
 
 .project-info .stack li {
-	color: #c0c0c0;
+	color: var(--paragraph);
 	display: inline-block;
 	margin-right: 2rem;
 }
 
 .project-info a {
-	color: rgb(255, 255, 255);
+	color: white;
 	text-decoration: none;
 	transition: 0.3s ease;
 }
@@ -417,9 +429,8 @@ header a i:hover {
 
 .tech > p {
 	font-size: clamp(1rem, 3vw, 1.5rem);
-
 	max-width: 60%;
-	color: #cfcfcf;
+	color: var(--paragraph);
 	line-height: clamp(1.5rem, 5vw, 2.5rem);
 }
 
@@ -457,6 +468,7 @@ header a i:hover {
 }
 
 /* ABOUT ME SECTION*/
+
 .about {
 	position: relative;
 	padding: 4rem;
@@ -471,18 +483,27 @@ header a i:hover {
 .about > p {
 	font-size: clamp(1rem, 3vw, 1.5rem);
 	max-width: 68%;
-	color: #cfcfcf;
+	color: var(--paragraph);
 	line-height: clamp(1.5rem, 5vw, 2.5rem);
 }
 
-.about > p a {
+.games {
+	cursor: pointer;
+}
+
+.games:hover {
+	color: white;
+	transition: ease 0.3s;
+}
+
+.pizza {
 	color: inherit;
 	font-size: inherit;
 	font-family: inherit;
 	text-decoration: none;
 }
 
-.about > p a:hover {
+.pizza:hover {
 	color: white;
 	transition: ease 0.3s;
 }
@@ -525,7 +546,7 @@ header a i:hover {
 
 .timeline-card p {
 	font-size: 0.8rem;
-	color: #cecece;
+	color: var(--paragraph);
 	font-weight: 400;
 	max-width: 80%;
 }
@@ -542,7 +563,7 @@ header a i:hover {
 	filter: brightness(0.8) invert();
 }
 
-.fm {
+.frontend-masters {
 	filter: brightness(5);
 }
 
@@ -564,9 +585,6 @@ header a i:hover {
 	align-items: center;
 	text-decoration: none;
 	font-size: 1.5rem;
-}
-
-.profile-links ul a {
 	filter: brightness(0.8);
 }
 
@@ -587,6 +605,14 @@ footer {
 	margin: 0 auto;
 }
 
+.footer-wrapper i {
+	margin-left: 1rem;
+	color: white;
+	font-size: 2rem;
+	transition: 0.3s ease;
+	font-size: 1.2rem;
+}
+
 .contact-info {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -596,13 +622,13 @@ footer {
 .contact-info h4 {
 	grid-row: 1;
 	margin-bottom: 1rem;
-	color: #878b92;
+	color: var(--header);
 	font-size: 0.8rem;
 }
 
 .contact-info *:not(h4) {
 	grid-row: 2;
-	color: #d1d1d1;
+	color: var(--navigation);
 }
 
 .bottom {
@@ -612,25 +638,17 @@ footer {
 }
 
 .bottom p {
-	color: #878b92;
+	color: var(--paragraph);
 	font-weight: 700;
 	align-self: flex-end;
 	font-size: 0.7rem;
-}
-
-.footer-wrapper i {
-	margin-left: 1rem;
-	color: white;
-	font-size: 2rem;
-	transition: 0.3s ease;
-	font-size: 1.2rem;
 }
 
 /* DARK MODE CLASSES */
 /* DARK MODE - GENERAL CLASS, INVERT - REVERSES EFFECTS OF INVERT FILTER */
 
 .dark-mode {
-	background-color: #f5f5f5;
+	background-color: var(--lm-primary);
 	filter: invert() hue-rotate(180deg);
 	transition: background-color 0.5s ease-in;
 }
@@ -646,11 +664,11 @@ footer {
 .dark-mode .media-links *,
 .dark-mode .contact-info *,
 .dark-mode .bottom {
-	color: rgb(211, 211, 211);
+	color: var(--lm-header);
 }
 
 .dark-mode .stack li {
-	color: rgb(168, 168, 168);
+	color: var(--lm-list);
 }
 
 .invert {
@@ -685,7 +703,7 @@ footer {
 	.nav-mobile {
 		position: fixed;
 		bottom: 0;
-		background-color: #0e1a31;
+		background-color: var(--mobile-nav);
 		border-top: 1px solid rgba(255, 255, 255, 0.1);
 		display: flex;
 		justify-content: center;
@@ -721,17 +739,19 @@ footer {
 
 	/* HERO */
 
-	.hero-text {
+	.hero-text-container {
 		margin-top: 2rem;
 	}
 
-	.hero-text p {
+	.hero-text-container p {
 		max-width: 100%;
 	}
 
 	.cta {
 		padding: 0.5rem 1rem;
 	}
+
+	/* PROJECTS SECTION */
 
 	.project-cards-wrapper {
 		display: grid;
@@ -745,6 +765,8 @@ footer {
 		gap: 2.5rem;
 	}
 
+	/* TECH SECTION */
+
 	.tech > p {
 		max-width: 100%;
 	}
@@ -757,9 +779,13 @@ footer {
 		max-width: 100%;
 	}
 
+	/* ABOUT SECTION*/
+
 	.about > p {
 		max-width: 100%;
 	}
+
+	/* FOOTER */
 
 	footer {
 		margin-top: 3rem;
