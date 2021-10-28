@@ -1,8 +1,10 @@
+
 const bodyEl = document.querySelector('body')
 const inverted = document.querySelectorAll('.inverted')
 const darkBtn = document.getElementById("chk")
 const svg = document.querySelector(".hero-animation")
 const mobileNav = document.querySelector(".nav-mobile")
+const logo = document.querySelector("img")
 
 logo.addEventListener('click', () => {
     logo.classList.toggle("animate__animated")
@@ -21,6 +23,7 @@ darkBtn.addEventListener('change', () => {
         element.classList.toggle("invert")
     });
     mobileNav.style = "position: sticky;"
+
 })
 
 
