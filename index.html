@@ -15,15 +15,17 @@
         <!-- CSS/FAVICON -->
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image" sizes="32x32" href="./images/pb-facivon.svg">
-        <title>Patryk Besler Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <title>Patryk Besler - Frontend Developer</title>
 
     </head>
 
     <body>
         <header>
             <div class="container" >
-                <div class="logo-container">
-                    <a class="logo" href="index.html"></a>
+                <div class="logo-container logo ">
+                    <img src="images/pb-logo.svg" class="logo">
                 </div>
                 <nav>
                     <ul class="nav-list">
@@ -32,8 +34,8 @@
                         <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
-                <div class="media-links">
-                    <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github"></i></a>
+                <div class="media-links animate__animated animate__fadeInRight animate__delay-1s" >
+                    <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github "></i></a>
                     <a href="https://www.linkedin.com/in/beslerpatryk" target="_blank"><i
                             class="fab fa-linkedin"></i></a>
                     <a href="beslerpatryk [at] gmail.com" target="_blank" 
@@ -52,19 +54,19 @@
 
         <main>
             <div class="container" id="hero">
-                <div class="hero-wrapper">
+                <div  class="hero-wrapper">
                     <div class="hero-text-container ">
-                        <h1>Patryk Besler, <br> aspiring Frontend Developer</h1>
-                        <p>
-                            I'm a Software Engineering student with flair for design, devoted to building quality
+                        <h1 class="animate__animated animate__fadeInUp">Hi there, <br> I'm Patrick.</h1>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s">
+                            Software Engineering student with flair for design, devoted to building quality
                             websites and apps.
                         </p>
-                        <div class="inverted">
+                        <div class="inverted animate__animated animate__fadeInUp animate__delay-2s">
                             <a class="cta " href="beslerpatryk [at] gmail.com" target="_blank" 
                             onclick="this.href='mailto:' + 'beslerpatryk' + '@' + 'gmail.com'">Contact me</a>
                         </div>
                     </div>
-                    <div class="hero-animation "> </div>
+                    <div class="hero-animation animate__animated animate__fadeIn"> </div>
                 </div>
             </div>
 
@@ -74,7 +76,7 @@
 
             <div class="container" id="projects">
                 <div class="projects-wrapper">
-                    <h2>Projects</h2>
+                    <h2 class="animate__animated animate__fadeInUp">Projects</h2>
                     <div class="project-cards-wrapper">
                         <div class="project-card">
                             <div class="image-wrapper inverted">
@@ -86,17 +88,17 @@
                                 </div>
                             </div>
                             <div class="project-info">
-                                <ul class="stack">
+                                <ul class="stack animate__animated animate__fadeInUp">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                               <h3 class="project-title"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/time-tracking-dashboard/">Time Tracking Dashboard</a></h3>
+                               <h3 class="project-title animate__animated animate__fadeInUp"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/time-tracking-dashboard/">Time Tracking Dashboard</a></h3>
 
-                                <p class="project-description">
+                                <p class="project-description animate__animated animate__fadeInUp animate__delay-1s">
                                     A fully responsive time tracking dashboard. This project gave my an opportunity to
                                     learn .json file data handling. Users are able to:
                                 </p>
-                                <ul class="feature-list">
+                                <ul class="feature-list animate__animated animate__fadeInUp animate__delay-2s">
                                     <li>View the optimal layout for the site depending on their device's screen size
                                     </li>
                                     <li>See hover states for all interactive elements on the page</li>
@@ -115,12 +117,12 @@
                                 </div>
                             </div>
                             <div class="project-info">
-                                <ul class="stack">
+                                <ul class="stack animate__animated animate__fadeInUp">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                                <h3 class="project-title"><a class="live-link" target="blank" href="https://just-a-movieapp.netlify.app/">Movie App</a></h3>
-                                <p class="project-description">
+                                <h3 class="project-title animate__animated animate__fadeInUp"><a class="live-link" target="blank" href="https://just-a-movieapp.netlify.app/">Movie App</a></h3>
+                                <p class="project-description animate__animated animate__fadeInUp animate__delay-1s">
                                     A progressive, fully responsive web application to help you discover trending
                                     movies. This app features multiple API calls to fetch movie lists and details. User
                                     can also take advantage of search bar to find any title you need. Mobile-first
@@ -141,12 +143,12 @@
                                 </div>
                             </div>
                             <div class="project-info">
-                                <ul class="stack">
+                                <ul class="stack animate__animated animate__fadeInUp">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                               <h3 class="project-title"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/easybank-landing-page/">Payment App <br> Landing Page</a></h3>
-                                <p class="project-description">
+                               <h3 class="project-title animate__animated animate__fadeInUp"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/easybank-landing-page/">Payment App <br> Landing Page</a></h3>
+                                <p class="project-description animate__animated animate__fadeInUp animate__delay-1s">
                                     A fully responsive landing page project. During the process I applied mobile-first
                                     workflow and tried my best to follow Semantic HTML5 markup guidelines. For the
                                     desktop layout CSS grid was used, on mobile - flexbox.
@@ -164,16 +166,16 @@
                                 </div>
                             </div>
                             <div class="project-info">
-                                <ul class="stack">
+                                <ul class="stack animate__animated animate__fadeInUp">
                                     <li>HTML & CSS</li>
                                     <li>Javascript</li>
                                 </ul>
-                                <h3 class="project-title"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/huddle-landing-page/">Communicator App <br> Landing Page</a></h3>
-                                <p class="project-description">
+                                <h3 class="project-title animate__animated animate__fadeInUp"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/huddle-landing-page/">Communicator App <br> Landing Page</a></h3>
+                                <p class="project-description animate__animated animate__fadeInUp animate__delay-1s">
                                     A fully responsive landing page project.
                                     Users are able to:
                                 </p>
-                                <ul class="feature-list">
+                                <ul class="feature-list animate__animated animate__fadeInUp animate__delay-2s">
                                     <li>View the optimal layout for the site depending on their device's screen size</li>
                                     <li>See hover states for all interactive elements on the page</li>
                                 </ul>
@@ -189,23 +191,23 @@
 
             <div class="container" id="tech">
                 <div class="tech wrapper">
-                    <h2>Technologies</h2>
-                    <p>
+                    <h2 class="animate__animated animate__fadeInUp">Technologies</h2>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s">
                         I've worked with a range of technologies in the web development world. From back-end to
                         design...
                     </p>
                     <div class="tech-cards-wrapper">
-                        <div class="tech-card">
+                        <div class="tech-card animate__animated animate__fadeInUp animate__delay-1s">
                             <i class="fas fa-file-code"></i>
                             <h3>Front-End</h3>
                             <p>Experience with HTML/CSS and JavaScript [ES6+] </p>
                         </div>
-                        <div class="tech-card">
+                        <div class="tech-card animate__animated animate__fadeInUp animate__delay-2s">
                             <i class="fas fa-database"></i>
                             <h3>Back-End</h3>
                             <p>Experience with SQL</p>
                         </div>
-                        <div class="tech-card">
+                        <div class="tech-card animate__animated animate__fadeInUp animate__delay-3s">
                             <i class="fas fa-ruler-combined"></i>
                             <h3>UI/UX</h3>
                             <p>Experience with tools such as AdobeXD and Figma</p>
@@ -220,13 +222,13 @@
 
             <div class="container" id="about">
                 <div class="about wrapper">
-                    <h2>About me</h2>
-                    <p>
+                    <h2 class="animate__animated animate__fadeInUp">About me</h2>
+                    <p class="animate__animated animate__fadeInUp">
                         Software Engineering student from Poland, currently residing in Chengdu, China.
                         When I’m not coding, you can find me playing <span class="games">PC games</span>, 
                             learning Chinese and making silly photos of my cat - <a class="pizza" href="https://imgur.com/a/XPa41Pn" target="_blank">Pizza</a>  
                     </p>
-                    <div class="timeline-wrapper">
+                    <div class="timeline-wrapper animate__animated animate__fadeInUp animate__delay-1s">
                         <div class="timeline-card">
                             <h3>2017</h3>
                             <img src="images/timeline.svg" alt="" srcset="">
@@ -262,10 +264,10 @@
             
             <div class="container" id="profile-links">
                 <div class="profile-links wrapper">
-                    <h3>Links to my profiles</h3>
-                    <h2>Coding Challenge Websites</h2>
+                    <h3 class="animate__animated animate__fadeInUp animate__delay-3s">Links to my profiles</h3>
+                    <h2 class="animate__animated animate__fadeInUp">Coding Challenge Websites</h2>
 
-                    <ul>
+                    <ul class="animate__animated animate__fadeInUp animate__delay-4s">
                         <li>
                             <a href="https://codepen.io/your-work/" target="_blank">
                                 <div class="page-icon-container" style="background-image:url(images/profile-icon-codepen.svg); ">
