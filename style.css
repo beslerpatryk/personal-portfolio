@@ -12,9 +12,19 @@
 	--lm-primary: hsl(0, 0%, 96%);
 	--lm-header: hsl(0, 0%, 83%);
 	--lm-list: hsl(0, 0%, 66%);
+
+	/* Animation */
 }
 
 /* GENERAL */
+
+.animate__animated.animate__fadeInUp {
+	--animate-delay: 0.2s;
+}
+
+.animate__animated.animate__fadeInRight {
+	--animate-delay: 0.5s;
+}
 
 * {
 	margin: 0;
@@ -105,6 +115,7 @@ header .container {
 	padding: 2rem 4rem;
 	max-width: 1504px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .logo-container {
@@ -118,7 +129,7 @@ header .container {
 .logo {
 	width: 2.5rem;
 	height: 2.5rem;
-	background-image: url(images/pb-logo.svg);
+	/* background-image: url(images/pb-logo.svg); */
 	background-repeat: no-repeat;
 	background-size: contain;
 	cursor: pointer;
@@ -127,6 +138,11 @@ header .container {
 header .container img {
 	max-width: 100%;
 	margin-right: 0.5rem;
+}
+
+header nav {
+	position: absolute;
+	left: 25vw;
 }
 
 .nav-list {
@@ -247,7 +263,7 @@ header a i:hover {
 
 .hero-text-container p {
 	position: relative;
-	max-width: 68%;
+	max-width: 58%;
 	margin-top: 2rem;
 	line-height: clamp(1.5rem, 4vw, 3rem);
 	font-size: clamp(1rem, 3vw, 1.8rem);
@@ -675,7 +691,7 @@ footer {
 	filter: invert() hue-rotate(180deg);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
 	/* GENERAL */
 	.divider-primary {
 		margin: 1rem 0;
