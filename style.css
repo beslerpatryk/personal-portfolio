@@ -5,7 +5,7 @@
 	--navigation: hsl(0, 0%, 81%);
 	--header: hsl(0, 0%, 98%);
 	--paragraph: hsl(0, 0%, 81%);
-	--accent: hsl(220, 41%, 10%);
+	--accent: hsl(220, 100%, 70%);
 	--mobile-nav: hsl(219, 56%, 12%);
 
 	/*Light Mode */
@@ -394,7 +394,7 @@ header a i:hover {
 }
 
 .project-info a:hover {
-	color: #689aff;
+	color: var(--accent);
 	transition: 0.3s ease;
 }
 
@@ -410,13 +410,13 @@ header a i:hover {
 	grid-column: 1;
 	margin: 1rem 0;
 	line-height: clamp(1.5rem, 2vw, 1.7rem);
-	color: #cfcfcf;
+	color: var(--paragraph);
 }
 
 .feature-list li {
 	margin-left: 2rem;
 	margin-bottom: 0.8rem;
-	color: #cfcfcf;
+	color: var(--paragraph);
 }
 
 .tech-used {
@@ -464,7 +464,7 @@ header a i:hover {
 
 .tech-card p {
 	font-size: 1rem;
-	color: #c0c0c0;
+	color: var(--paragraph);
 	max-width: 70%;
 }
 
