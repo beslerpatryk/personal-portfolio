@@ -520,7 +520,7 @@ header a i:hover {
 }
 
 .pizza:hover {
-	color: white;
+	color: #fff;
 	transition: ease 0.3s;
 }
 
