@@ -18,6 +18,50 @@
 
 /* GENERAL */
 
+.container .weglot.invert * {
+	color: black;
+}
+
+.container .weglot-container {
+	margin-right: auto;
+	border: none;
+	background-color: transparent;
+}
+
+.container .weglot-container * {
+	border: none;
+	background-color: transparent;
+}
+
+.container .wg-drop.country-selector .wgcurrent {
+	border: none;
+	background-color: transparent;
+}
+
+.container .wg-drop.country-selector {
+	background-color: transparent;
+}
+
+.container .wg-drop.country-selector * {
+	border: none;
+	background-color: transparent;
+}
+
+.container .country-selector a {
+	color: white;
+	background-color: transparent;
+}
+
+.container .wg-drop.country-selector .wgcurrent:after {
+	filter: invert();
+	background-color: transparent;
+}
+
+.weglot-container li {
+	transition: 0.3s ease;
+	background-color: transparent;
+}
+
 .animate__animated.animate__fadeInUp {
 	--animate-delay: 0.2s;
 }
