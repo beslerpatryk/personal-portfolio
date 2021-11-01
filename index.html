@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
         <!-- CSS/FAVICON -->
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image" sizes="32x32" href="./images/pb-facivon.svg">
@@ -24,9 +25,9 @@
     <body>
         <header>
             <div class="container" >
-                <div class="logo-container logo ">
+                <!-- <div class="logo-container logo ">
                     <img src="images/pb-logo.svg" class="logo">
-                </div>
+                </div> -->
                 <nav>
                     <ul class="nav-list">
                         <li><a href="#projects">Projects</a></li>
@@ -34,6 +35,7 @@
                         <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
+                <div class="weglot inverted"></div>
                 <div class="media-links animate__animated animate__fadeInRight animate__delay-1s" >
                     <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github "></i></a>
                     <a href="https://www.linkedin.com/in/beslerpatryk" target="_blank"><i
@@ -48,6 +50,8 @@
                             <div class="ball"></div>
                         </label>
                     </div>
+
+
                 </div>
             </div>
         </header>
@@ -172,7 +176,8 @@
                                 </ul>
                                 <h3 class="project-title animate__animated animate__fadeInUp"><a class="live-link" target="_blank" href="https://beslerpatryk.github.io/huddle-landing-page/">Communicator App <br> Landing Page</a></h3>
                                 <p class="project-description animate__animated animate__fadeInUp animate__delay-1s">
-                                    A fully responsive landing page project.
+                                    A fully responsive landing page project. During the process I applied mobile-first
+                                    workflow and followed semantic HTML5 markup guidelines.
                                     Users are able to:
                                 </p>
                                 <ul class="feature-list animate__animated animate__fadeInUp animate__delay-2s">
@@ -320,12 +325,39 @@
             </div>
         </footer>
 
-        <!-- <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+        <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
         <script>
             Weglot.initialize({
-                api_key: 'wg_605802e555dfafa60645f8d2dd9d4f922'
+                api_key: 'wg_605802e555dfafa60645f8d2dd9d4f922',
+                switchers: [
+                    {
+                        // Same as button_style at root
+                        button_style: {
+                            full_name: false,
+                            with_name: true,
+                            is_dropdown: true,
+                            with_flags: true,
+                            flag_type: "shiny",
+                            invert_flags: false
+                        },
+                        // Move switcher somewhere in the page
+                        location: {
+                            target: ".weglot", // You'll probably have to change it (see the step below in order to find the correct CSS selector)
+                            sibling: null
+                        },
+                        excluded_blocks: [
+                            {
+                                value: ".stack"
+                            },
+                            {
+                                value: ".no-translate"
+                            }
+                        ]
+
+                    }
+                ]
             });
-        </script> -->
+            </script>
         <script src="script.js"></script>
     </body>
 </html>
