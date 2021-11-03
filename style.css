@@ -729,6 +729,14 @@ footer {
 	color: var(--lm-header);
 }
 
+.dark-mode .label {
+	background-color: #2b2b2b;
+}
+
+.dark-mode .dark-toggle i {
+	color: #f39c12;
+}
+
 .dark-mode .stack li {
 	color: var(--lm-list);
 }
