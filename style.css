@@ -187,8 +187,7 @@ header .container img {
 }
 
 header nav {
-	position: absolute;
-	left: 25vw;
+	order: 1;
 }
 
 .nav-list {
@@ -218,6 +217,7 @@ header nav {
 header .media-links {
 	display: flex;
 	gap: clamp(1rem, 2vw, 3rem);
+	order: 2;
 }
 
 header i {
@@ -800,7 +800,7 @@ footer {
 	/* HEADER */
 
 	header .container {
-		padding: 2 4rem;
+		padding: 2rem clamp(1.5rem, 4vw, 4rem);
 	}
 
 	header .nav-list {
