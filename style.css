@@ -989,6 +989,10 @@ footer {
 		gap: 2.5rem;
 	}
 
+	.project-info a:hover {
+		color: var(--header);
+	}
+
 	/* TECH SECTION */
 
 	.tech > p {
