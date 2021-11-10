@@ -2,7 +2,7 @@
 	/* Dark Mode */
 	--primary: hsl(220, 41%, 10%);
 	--secondary: hsl(220, 41%, 10%);
-	--navigation: hsl(0, 0%, 81%);
+	--navigation: rgb(207, 207, 207);
 	--header: hsl(0, 0%, 98%);
 	--paragraph: hsl(0, 0%, 81%);
 	--accent: hsl(220, 100%, 70%);
@@ -244,7 +244,7 @@ header nav {
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: 700;
-	margin-top: 0.5rem;
+	/* margin-top: 0.5rem; */
 }
 
 .nav-list a {
