@@ -25,9 +25,7 @@
     <body>
         <header>
             <div class="container" >
-                <!-- <div class="logo-container logo ">
-                    <img src="images/pb-logo.svg" class="logo">
-                </div> -->
+                <div id="translateMenuContainer"></div>
                 <nav>
                     <ul class="nav-list">
                         <li><a href="#projects">Projects</a></li>
@@ -35,7 +33,6 @@
                         <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
-                <div class="weglot inverted"></div>
                 <div class="media-links animate__animated animate__fadeInRight animate__delay-1s" >
                     <a href="https://github.com/beslerpatryk" target="_blank"><i class="fab fa-github "></i></a>
                     <a href="https://www.linkedin.com/in/beslerpatryk" target="_blank"><i
@@ -60,10 +57,9 @@
             <div class="container" id="hero">
                 <div  class="hero-wrapper">
                     <div class="hero-text-container ">
-                        <h1 class="animate__animated animate__fadeInUp">Hi there, <br> I'm Patrick.</h1>
+                        <h1 class="animate__animated animate__fadeInUp">Hi there,<br>I'm Patrick.</h1>
                         <p class="animate__animated animate__fadeInUp animate__delay-1s">
-                            Software Engineering student with a flair for design, devoted to building quality
-                            websites and apps.
+                            Software Engineering student with a flair for design, devoted to building quality websites and apps.
                         </p>
                         <div class="inverted animate__animated animate__fadeInUp animate__delay-2s">
                             <a class="cta " href="beslerpatryk [at] gmail.com" target="_blank" 
@@ -315,40 +311,8 @@
                 </div>
             </div>
         </footer>
-
-        <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-        <script>
-            Weglot.initialize({
-                api_key: 'wg_605802e555dfafa60645f8d2dd9d4f922',
-                switchers: [
-                    {
-                        // Same as button_style at root
-                        button_style: {
-                            full_name: false,
-                            with_name: true,
-                            is_dropdown: true,
-                            with_flags: true,
-                            flag_type: "shiny",
-                            invert_flags: false
-                        },
-                        // Move switcher somewhere in the page
-                        location: {
-                            target: ".weglot", // You'll probably have to change it (see the step below in order to find the correct CSS selector)
-                            sibling: null
-                        },
-                        excluded_blocks: [
-                            {
-                                value: ".stack"
-                            },
-                            {
-                                value: ".no-translate"
-                            }
-                        ]
-
-                    }
-                ]
-            });
-            </script>
         <script src="script.js"></script>
+        <script src="cn-translation.js"></script>
+        <script src="translate.js"></script>
     </body>
 </html>
