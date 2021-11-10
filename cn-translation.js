@@ -1,22 +1,16 @@
 
 var translationJSON = {
     "custom_lang_switcher_container_id": "translateMenuContainer",
-    // "custom_lang_switcher_html": 
-    //     `<span class=\"notranslate\"><a href=\"http://www.yourdomain.com/index.html\">ENG</a> |
-    //                                  <a href=\"http://es.yourdomain.com/index.html\">ESP</a> | 
-    //                                  <a href=\"http://fr.yourdomain.com/index.html\">FRA</a>
-    //                                  </span>`,
+
 
     "languages": [
         {
             "lang_name": "En",
-            "lang_code": "en",
-            "url_pattern": "?"
+            "lang_code": "en"
         },
         {
             "lang_name": "中",
-            "lang_code": "cn",
-            "url_pattern": "?"
+            "lang_code": "cn"
         }
     ],
     "translated_segments": [
