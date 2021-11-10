@@ -705,7 +705,6 @@
 
                             if (!translationJSON.translated_pages) {
 
-                                rewriteUrl(link, absoluteLink, translationLang, url_pattern);
                             } else {
 
                                 var comparableLink = createComparableLink(absoluteLink, languages);
@@ -779,7 +778,48 @@
 
     var translationLoader = function () {
 
-        var cssCode = " #custom_id { display: block; color: #fff; display: block; width: 160px; padding: 5px; text-decoration: none; } #langswitcher{ top: 0px; right: 0px; z-index: 100001; text-transform: uppercase; text-align: left; color: #fff; font-size: 12px; line-height: 18px; }  a#currentlanglink { display: none; width: 160px; padding: 5px; color: #fff; font-weight: bold; text-decoration: none; }   }";
+        var cssCode = `
+        #custom_id { 
+            display: block; 
+            color: #fff; 
+            display: block;
+            width: 160px; 
+            padding: 5px; 
+            text-decoration: none; } 
+        #langswitcher{ 
+            top: 0px; 
+            right: 0px; 
+            z-index: 100001; 
+            text-transform: 
+            uppercase; 
+            text-align: left;
+            color: #cfcfcf;
+            font-size: 1rem; 
+            font-family: inherit; 
+            line-height: 18px; 
+        }  
+        a#currentlanglink { 
+            display: none; 
+            width: 160px; 
+            padding: 5px; 
+            color: #cfcfcf; 
+            font-weight: 
+            transition: 0.3s ease;}
+        }
+        a#currentlanglink:hover { 
+            color: white;
+            transition: 0.3s ease;
+        }
+        .target{
+            color: #cfcfcf;
+            transition: 0.3s ease;
+        }
+        .target:hover{
+            color: white;
+            transition: 0.3s ease;
+        }
+        
+        }`;
         var style = d.createElement('style');
         style.type = "text/css";
         if (style.styleSheet)
