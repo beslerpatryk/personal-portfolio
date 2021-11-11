@@ -130,55 +130,6 @@ span.reverse {
 	margin: 2rem 0;
 }
 
-/* WEGLOT STYLE */
-
-.container .weglot.invert * {
-	color: black;
-}
-
-.container .weglot-container {
-	margin-right: auto;
-	border: none;
-	background-color: transparent;
-}
-
-.container .weglot-container * {
-	border: none;
-	background-color: transparent;
-}
-
-.container .wg-drop.country-selector .wgcurrent {
-	border: none;
-	background-color: transparent;
-}
-
-.container .wg-drop.country-selector {
-	background-color: transparent;
-}
-
-.container .wg-drop.country-selector * {
-	border: none;
-	background-color: transparent;
-}
-
-.container .country-selector a {
-	color: white;
-	background-color: transparent;
-}
-
-.container .wg-drop.country-selector .wgcurrent:after {
-	-webkit-filter: invert();
-	filter: invert();
-	background-color: transparent;
-}
-
-.container .weglot-container li {
-	-webkit-transition: 0.3s ease;
-	-o-transition: 0.3s ease;
-	transition: 0.3s ease;
-	background-color: transparent;
-}
-
 /* HEADER */
 
 .nav-mobile {
@@ -857,8 +808,20 @@ footer {
 /* DARK MODE CLASSES */
 /* DARK MODE - GENERAL CLASS, INVERT - REVERSES EFFECTS OF INVERT FILTER */
 
-.dark-mode {
+body.dark-bg {
 	background-color: var(--lm-primary);
+	-webkit-transition: background-color 0.5s ease-in;
+	-o-transition: background-color 0.5s ease-in;
+	transition: background-color 0.5s ease-in;
+}
+
+.nav-mobile.dark-bg {
+	background-color: #2b2b2b;
+	-o-transition: background-color 0.5s ease-in;
+	transition: background-color 0.5s ease-in;
+}
+
+.dark-mode {
 	-webkit-filter: invert() hue-rotate(180deg);
 	filter: invert() hue-rotate(180deg);
 	-webkit-transition: background-color 0.5s ease-in;
@@ -882,6 +845,7 @@ footer {
 
 .dark-mode .label {
 	background-color: #2b2b2b;
+	/* background-color: #53549c; */
 }
 
 .dark-mode .dark-toggle i {
@@ -898,6 +862,9 @@ footer {
 }
 
 @media (max-width: 740px) {
+	body {
+		/* overflow-x: hidden; */
+	}
 	/* GENERAL */
 	.divider-primary {
 		margin: 1rem 0;
@@ -925,21 +892,18 @@ footer {
 	.nav-mobile {
 		position: fixed;
 		bottom: 0;
+		left: 0;
 		background-color: var(--mobile-nav);
 		border-top: 1px solid rgba(255, 255, 255, 0.1);
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
 		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
 		padding: 1rem 4rem;
-		min-width: 740px;
+		width: 100vw;
 		z-index: 200;
 		text-align: center;
+		transition: background-color 0.5s ease-in;
+		overflow: hidden;
 	}
 
 	.nav-mobile ul {

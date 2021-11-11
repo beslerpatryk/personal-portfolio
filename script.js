@@ -5,6 +5,11 @@ const svg = document.querySelector(".hero-animation")
 const mobileNav = document.querySelector(".nav-mobile")
 const logo = document.querySelector("img")
 
+const header = document.querySelector('header')
+const main = document.querySelector('main')
+const footer = document.querySelector('footer')
+
+
 
 
 logo.addEventListener('click', () => {
@@ -19,12 +24,16 @@ svg.innerHTML =
 
 darkBtn.addEventListener('change', () => {
     // document.documentElement.classList.toggle('dark-mode')
-    bodyEl.classList.toggle('dark-mode')
+    header.classList.toggle('dark-mode')
+    main.classList.toggle('dark-mode')
+    footer.classList.toggle('dark-mode')
+    bodyEl.classList.toggle('dark-bg')
+    mobileNav.classList.toggle('dark-bg')
+
+
     inverted.forEach(element => {
         element.classList.toggle("invert")
     });
-    mobileNav.style = "position: sticky;"
-
 })
 
 console.log(`    |\\__/,|   ('\\
