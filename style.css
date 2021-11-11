@@ -45,6 +45,7 @@ body {
 	-webkit-transition: background-color 0.3s ease-in;
 	-o-transition: background-color 0.3s ease-in;
 	transition: background-color 0.3s ease-in;
+	overflow-x: hidden;
 }
 
 main {
@@ -562,6 +563,10 @@ header a i:hover {
 	margin: 1rem 0;
 	line-height: clamp(1.5rem, 2vw, 1.7rem);
 	color: var(--paragraph);
+}
+
+.separate {
+	display: inline;
 }
 
 .feature-list li {
