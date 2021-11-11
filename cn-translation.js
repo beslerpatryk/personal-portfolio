@@ -48,8 +48,8 @@ var translationJSON = {
             "source": "Time Tracking Dashboard",
             "target": "时间跟踪仪表板"
         },{
-            "source": "A fully responsive landing page project. As part of the process, I applied a mobile-first workflow and followed semantic HTML5 markup guidelines.",
-            "target": "一个完全响应的登陆页面项目。作为这个过程的一部分，我应用了移动优先的工作流程，并遵循语义学HTML5标记指南。"
+            "source": "A fully responsive time tracking dashboard. In this project, I learned how to manage data stored in JSON files. Users are able to:",
+            "target": "完全响应的时间跟踪仪表板。在这个项目中，我学会了如何管理存储在 JSON 文件中的数据。用户能够："
         },{
             "source": "View the optimal layout for the site depending on their device's screen size",
             "target": "根据设备的屏幕大小查看网站的最佳布局"
@@ -79,6 +79,9 @@ var translationJSON = {
         },{
             "source": "Communicator App <br> Landing Page",
             "target": "通信器应用程序着陆页"
+        },{
+            "source": "A fully responsive landing page project. As part of the process, I applied a mobile-first workflow and followed semantic HTML5 markup guidelines.",
+            "target": "一个完全响应的登陆页面项目。作为这个过程的一部分，我应用了移动优先的工作流程，并遵循语义学HTML5标记指南。"
         },{
             "source": "A fully responsive landing page project. As part of the process, I applied a mobile-first workflow and followed semantic HTML5 markup guidelines. Users are able to:",
             "target": "完全响应的着陆页项目。作为流程的一部分，我应用了移动第一的工作流程，并遵循了语义HTML5标记指南。用户能够："
