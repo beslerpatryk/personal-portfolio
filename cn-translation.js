@@ -60,8 +60,16 @@ var translationJSON = {
             "source": "Switch between viewing Daily, Weekly, and Monthly stats",
             "target": "在查看每日、每周和每月统计资料之间进行切换"
         },{
-            "source": "A progressive, fully responsive web application to help users discover trending movies. This app features multiple API calls to fetch movie lists and details. Users can also take advantage of the search bar to find any movie they need. Mobile-first workflow was applied together with semantic HTML5 markup guidelines. Built using TMDB API and JavaScript.",
-            "target": "一个渐进的、完全响应的网络应用，帮助用户发现流行的电影。这个应用程序具有多个API调用，以获取电影列表和细节。用户还可以利用搜索栏来寻找他们需要的任何电影。我使用了TMDB API 和 JavaScript 来构建此程序，并应用了移动优先的工作流程与语义学HTML5 标记准则。"
+            "source": "A progressive, fully responsive web application to help users discover trending movies. This app features multiple API calls to fetch movie lists and details. Users can also take advantage of the search bar to find any movie they need. Mobile-first workflow was applied together with semantic HTML5 markup guidelines.",
+            "target": "一个渐进的、完全响应的网络应用，帮助用户发现流行的电影。这个应用程序具有多个API调用，以获取电影列表和细节。用户还可以利用搜索栏来寻找他们需要的任何电影。应用了移动优先的工作流程与语义学HTML5 标记准则。"
+        },{
+            "source": "Built using",
+            "target": "我使用了 "
+        },{
+        },{
+            "source": "and JavaScript.",
+            "target": "和 JavaScript 来构建此程序"
+        },{
         },{
             "source": "Payment App <br> Landing Page",
             "target": "支付应用着陆页"
