@@ -937,7 +937,7 @@ footer {
 		-ms-flex-align: center;
 		align-items: center;
 		padding: 1rem 4rem;
-		width: 100%;
+		min-width: 740px;
 		z-index: 200;
 		text-align: center;
 	}
