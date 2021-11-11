@@ -123,14 +123,14 @@ var translationJSON = {
             "source": "Email",
             "target": "电子邮件"
         },{
-            "source": "Projects",
+            "source": "<strong>Projects</strong>",
             "target": "项目"
         },{
-            "source": "Projects",
-            "target": "项目"
+            "source": "<strong>Technologies</strong>",
+            "target": "技术"
         },{
-            "source": "Projects",
-            "target": "项目"
+            "source": "<strong>About</strong>",
+            "target": "关于"
         },{
             "source": "Projects",
             "target": "项目"
