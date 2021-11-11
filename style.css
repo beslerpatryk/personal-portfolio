@@ -516,7 +516,7 @@ header a i:hover {
 	color: var(--paragraph);
 }
 
-separate {
+.separate {
 	display: inline;
 }
 
