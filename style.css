@@ -6,7 +6,7 @@
 	--header: hsl(0, 0%, 98%);
 	--paragraph: hsl(0, 0%, 81%);
 	--accent: hsl(220, 100%, 70%);
-	--mobile-nav: hsl(219, 56%, 12%);
+	--mobile-nav: #1e3764;
 
 	/*Light Mode */
 	--lm-primary: hsl(0, 0%, 96%);
@@ -565,7 +565,7 @@ header a i:hover {
 	color: var(--paragraph);
 }
 
-.separate {
+separate {
 	display: inline;
 }
 
